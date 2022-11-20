@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render blocking Resources</title>
+    
+    <link rel="stylesheet" href="test.css">
+    <!-- 로딩 시간: 63.5ms -->
+    <link rel="stylesheet" href="test.css" media="print">
+    <!-- 로딩 시간: 55.5ms -->
+    <!-- media="all" : (미디어쿼리)모든 미디어에서 css 렌더링. 기본값. -->
+    <!-- media="print" : non render blocking. 프린트시에만 css를 렌더링하기 때문 -->
+</head>
+<body>
+    <!-- Render blocking Resources: CSS, Script -->
+    <!-- DOMContentLoaded : (이벤트) DOM 트리가 완성되는 때 발생, HTML 태그의 분석이 끝난 상태, 콘솔-네트워크 상에서 파란선 -->
+    <!-- load: (이벤트) 모든 리소스를 다 불러와서 화면 렌더링이 끝났을 때 발생, 빨간선 -->
+    <!-- 콘솔-성능(Performance)탭, Summary와 EventLog, 2초-중지 -->
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum obcaecati sapiente ratione, eos libero, aliquid perferendis cupiditate aperiam modi quas praesentium velit quis eius odit! Molestiae, minus? Esse, beatae sint?
+        Incidunt, illo natus? Animi, voluptatum voluptatibus! Eos odio modi voluptatibus blanditiis aliquam est adipisci recusandae pariatur facere voluptatem ab reiciendis sequi atque vel laboriosam officia rerum dolore, corrupti et ipsum.
+        Officiis doloremque, repellat beatae perspiciatis consequuntur fuga amet voluptatem vel qui harum est cupiditate fugit ad magni minus et veniam natus libero mollitia distinctio omnis aut ducimus? Fugit, deleniti nobis?
+        Distinctio repellat autem officia commodi quia quam facere omnis eveniet natus nam voluptas magnam corrupti, veniam temporibus. Esse optio, dolor, explicabo ipsa dolores officia suscipit in quidem architecto numquam dolore!
+        Incidunt, harum eligendi maiores sapiente quibusdam illo nobis a beatae tempore? Laudantium error iure quo, expedita quia ea aut doloremque voluptas temporibus distinctio repellat, obcaecati explicabo sint vitae quae soluta?
+        Assumenda sapiente facilis quam accusantium ducimus provident doloribus unde, qui inventore ipsa? Officiis eos quibusdam voluptates vitae optio magni numquam, ullam repellat molestiae qui, iure repellendus dolor mollitia obcaecati impedit!
+        Tenetur voluptatum impedit nisi non adipisci aliquid voluptas perspiciatis esse voluptatem ut! Recusandae, vel expedita quae optio totam labore, blanditiis quo obcaecati facere est alias similique natus ex voluptatibus maxime!
+        Cumque, cum voluptatum quis perferendis nesciunt reiciendis officia quod accusantium soluta, totam ratione, eum provident suscipit! Velit quis praesentium numquam a nam similique quisquam libero repellat at. Cumque, vero ex?
+        Quidem voluptatibus, eius laborum hic molestiae quae mollitia quia, ducimus perspiciatis, ipsa tempora officiis blanditiis recusandae dolorem commodi esse iusto quaerat quam. Aliquam repellat rerum recusandae consequatur, nulla obcaecati aliquid.
+        Amet id libero commodi ut fugiat. Vitae nostrum minus blanditiis cupiditate sapiente enim nulla sit ipsam sint doloribus optio, nihil quas! Autem nesciunt repudiandae maxime fugit, neque quisquam doloribus vero!
+    </div>
+</body>
+</html>
